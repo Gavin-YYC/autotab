@@ -1,0 +1,39 @@
+#tab{
+	width: 500px;
+	background:#fff;
+}
+#tab .nav>ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#tab .nav>ul li{
+	float: left;
+	width: 124px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	margin-left:-1px;
+	margin-top:-1px;
+	background: -moz-linear-gradient(top, #fefefe, #ededed);
+  background: -o-linear-gradient(left top,left bottom, from(#fefefe), to(#ededed));
+	background: -webkit-gradient(linear,left top,left bottom, from(#fefefe), to(#ededed));
+}
+#tab .nav>ul li.active{
+	background: #fff;
+	border-bottom:none;
+}
+#tab .main .content{
+	width:499px;
+	display: none;
+	clear:both;
+	border:1px solid #ccc;
+	border-top:none;
+	margin-left:-1px;
+	height:200px;
+}
+#tab .main .content.active{
+	display: block;
+}
