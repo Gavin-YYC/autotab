@@ -12,7 +12,7 @@
 		//default options
 		this.defaultOptions = {
 			tabBox: "tab",
-			indexTab: 3,
+			indexTab: 0,
 			autoTab: true,
 			speed: 1000,
 			mousewheel: true
