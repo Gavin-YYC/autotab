@@ -25,7 +25,6 @@
 		<div class="content content3">支持自动切换，自动切换速度</div>
 		<div class="content content4">自定义tab页面，初始化第四页</div>
 	</div>
-<script type="text/javascript" src="main.js"></script>
 </div>
 <ul>
 	<li>1、自定义tab页面</li>
@@ -33,5 +32,17 @@
 	<li>3、自定义自动切换速度</li>
 	<li>4、是否支持鼠标滚轮切换</li>
 </ul>
+<script type="text/javascript" src="tab.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	var tab = new TabSwitch({
+			tabBox: "tab",
+			indexTab: 2,
+			autoTab: true,
+			speed: 1000,
+			mousewheel: true
+		});
+}
+</script>
 </body>
 </html>
