@@ -37,6 +37,14 @@
 				this.li = this.allEle[i].getElementsByTagName("li");
 		};
 
+		//自定义bind()方法
+		Function.prototype.bind = Function.prototype.bind || function( context ){
+		    var self = this, arg = Array.prototype.slice.call( arguments );
+		    return function(){
+		        return self.apply( context, arg.slice( 1 ) );
+		    }
+		}
+
 		//初始化点击切换
 		for (var i = 0; i < this.li.length; i++) {
 			this.li[i].index = i;
